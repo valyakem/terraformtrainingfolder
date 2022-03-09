@@ -3,7 +3,7 @@ name: 'Terraform-Infra-Plan'
 on:
   push:
     branches:
-    - FeatureBranch
+    - featurebranch
   pull_request:
     branches:
     - main
