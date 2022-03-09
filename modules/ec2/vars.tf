@@ -1,4 +1,4 @@
- variable "count" {
+ variable "ec2_count" {
      default = "1"
  }
 
