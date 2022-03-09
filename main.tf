@@ -7,7 +7,7 @@ resource "aws_vpc" "main" {
 }
 
 module "nbwebserver" {
-  source            = "../setup/modules/webserver"
+  source            = "/modules/webserver"
   vpc_id            = aws_vpc.main.id
   cidr_block        = "10.10.0.0/16"
   webserver_name    = "nb-webserver"
