@@ -9,7 +9,7 @@ terraform {
 
 resource "aws_vpc" "main" {
   cidr_block = "${var.vpc_id}"
-  instance_tenancy = "dedicated"
+  instance_tenancy = "${var.tenancy}"
 
   tags = {
     "Name" = "main"
@@ -17,7 +17,7 @@ resource "aws_vpc" "main" {
 }
 
 resource "aws_subnet" "main" {
-  vpc_id     = aws_vpc.main.id
+  vpc_id     = "${var.vpc_id}"
   cidr_block = "${var.subnet_cidr}"
 
   tags = {
