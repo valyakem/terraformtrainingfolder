@@ -10,5 +10,5 @@ module "nb_ec2" {
     source = "./modules/ec2"
     ec2_count       = 1
     instance_type   = "t2.micro"
-    subnet_id       = "${module.nb_ec2.subnet_id}"
+    subnet_id       = "${module.nb_vpc01.subnet_id}"
 }
