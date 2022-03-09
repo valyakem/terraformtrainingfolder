@@ -4,9 +4,6 @@ on:
   push:
     branches:
     - featurebranch
-  pull_request:
-    branches:
-    - main
     
 jobs:
   terraform:
