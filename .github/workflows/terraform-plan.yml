@@ -4,18 +4,11 @@ on:
   push:
     branches:
     - featurebranch
-<<<<<<< HEAD
   # pull_request:
 
 jobs:
   terraform:
     name: 'Terraform'
-=======
-    
-jobs:
-  terraform:
-    name: 'Terraform-Plan'
->>>>>>> origin/featurebranch
     runs-on: ubuntu-latest
     env:
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
